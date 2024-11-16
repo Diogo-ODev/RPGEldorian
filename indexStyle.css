@@ -1,24 +1,28 @@
 header {
   height: 12vh;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 400px;
+  position: fixed;
+  background-color: #a3ade3;
 }
 
 main {
-  height: 88vh;
-  background-color: bisque;
+  height: 100vh;
+  background-color: #ededed;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
   justify-content: center;
+  padding-top: 12vh;
 }
 
 section {
   height: 100%;
   width: 75%;
-  background-color: blue;
+  background-color: #ededed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,4 +51,78 @@ aside div {
 ul,
 li {
   list-style: none;
+}
+
+h1 {
+  font-family: "MedievalSharp";
+}
+
+#svg-menu {
+  position: absolute;
+  top: 2.5vh;
+  left: 2.5vh;
+  cursor: pointer;
+  height: 8vh;
+  transition: all 0.3s ease;
+}
+
+#svg-menu:hover {
+  transform: scale(1.1);
+}
+
+#div-perfil {
+  position: absolute;
+  right: 2.5vh;
+  top: 2.5vh;
+  height: 8vh;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#div-perfil:hover {
+  transform: scale(1.1);
+}
+
+#div-perfil p {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.img-runa {
+  height: 62px;
+}
+
+#div-eldorian {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+#div-eldorian img {
+  transition: all 0.3s ease;
+}
+
+.img-runa {
+  height: 62px;
+  transition: all 0.3s ease;
+}
+
+.virar-imagem-180 {
+  transform: rotate(180deg);
+}
+
+#div-eldorian:hover img:nth-child(2) {
+  transform: scale(1.1);
+}
+/* gira a runa da esquerda */
+#div-eldorian:hover .img-runa:first-child {
+  transform: translateX(-20px) rotate(180deg) scale(1.1);
+}
+/* gira a ruan da esquerda, mantendo ela no sentido certo */
+#div-eldorian:hover .img-runa.virar-imagem-180 {
+  transform: translateX(20px) rotate(360deg) scale(1.1);
 }
