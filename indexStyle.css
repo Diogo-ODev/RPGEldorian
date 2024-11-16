@@ -30,24 +30,21 @@ aside {
   width: 25%;
   background-color: blueviolet;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
 }
 
-aside ul {
-  height: 100%;
-  width: 90%;
+aside div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 16px;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 24px;
+  margin: 16px;
 }
 
 ul,
 li {
   list-style: none;
-}
-
-aside ul li {
-  font-size: 24px;
 }
