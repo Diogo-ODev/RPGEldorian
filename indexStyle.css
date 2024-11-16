@@ -70,6 +70,10 @@ h1 {
   transform: scale(1.1);
 }
 
+#svg-menu:active {
+  transform: scale(0.95);
+}
+
 #div-perfil {
   position: absolute;
   right: 2.5vh;
@@ -82,6 +86,10 @@ h1 {
 
 #div-perfil:hover {
   transform: scale(1.1);
+}
+
+#div-perfil:active {
+  transform: scale(0.95);
 }
 
 #div-perfil p {
@@ -114,15 +122,27 @@ h1 {
 .virar-imagem-180 {
   transform: rotate(180deg);
 }
-
 #div-eldorian:hover img:nth-child(2) {
   transform: scale(1.1);
 }
-/* gira a runa da esquerda */
+/* gira a runa da esquerda ao dar o hover */
 #div-eldorian:hover .img-runa:first-child {
   transform: translateX(-20px) rotate(180deg) scale(1.1);
 }
-/* gira a ruan da esquerda, mantendo ela no sentido certo */
-#div-eldorian:hover .img-runa.virar-imagem-180 {
+/* gira a runa da esquerda, mantendo sua rotacao ao contrario */
+#div-eldorian:hover .img-runa.virar-imagem-180,
+#div-eldorian:active .img-runa.virar-imagem-180 {
   transform: translateX(20px) rotate(360deg) scale(1.1);
+}
+
+#div-eldorian:active img:nth-child(2) {
+  transform: scale(0.95);
+}
+
+#div-eldorian:active .img-runa:first-child {
+  transform: translateX(25px) rotate(90deg) scale(0.95);
+}
+
+#div-eldorian:active .img-runa.virar-imagem-180 {
+  transform: translateX(-25px) rotate(-90deg) scale(0.95);
 }
