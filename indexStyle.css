@@ -114,35 +114,6 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.img-runa {
-  height: 62px;
-  transition: all 0.3s ease;
-}
-
 .virar-imagem-180 {
   transform: rotate(180deg);
-}
-#div-eldorian:hover img:nth-child(2) {
-  transform: scale(1.1);
-}
-/* gira a runa da esquerda ao dar o hover */
-#div-eldorian:hover .img-runa:first-child {
-  transform: translateX(-20px) rotate(180deg) scale(1.1);
-}
-/* gira a runa da esquerda, mantendo sua rotacao ao contrario */
-#div-eldorian:hover .img-runa.virar-imagem-180,
-#div-eldorian:active .img-runa.virar-imagem-180 {
-  transform: translateX(20px) rotate(360deg) scale(1.1);
-}
-
-#div-eldorian:active img:nth-child(2) {
-  transform: scale(0.95);
-}
-
-#div-eldorian:active .img-runa:first-child {
-  transform: translateX(25px) rotate(90deg) scale(0.95);
-}
-
-#div-eldorian:active .img-runa.virar-imagem-180 {
-  transform: translateX(-25px) rotate(-90deg) scale(0.95);
 }
